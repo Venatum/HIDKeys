@@ -1,0 +1,92 @@
+#mainNav {
+    max-width: 100%;
+}
+
+.navbar-custom {
+    background-color: #222222;
+    border-color: transparent;
+}
+
+.navbar-custom .navbar-brand {
+    color: #0faabd;
+    font-family: "Satisfy", cursive;
+}
+
+.navbar-custom .navbar-collapse {
+    border-color: rgba(255, 255, 255, 0.02);
+}
+
+.navbar-custom .navbar-toggle {
+    background-color: #0faabd;
+    border-color: #0d8796;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.8em;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #0d8796;
+    border-color: #0faabd;
+}
+
+.navbar-custom .nav li a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+    outline: none;
+    background-color: #0d8796;
+    color: #ffffff;
+    border-radius: 1em;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    border-radius: 0;
+    color: white;
+    background-color: #0d8796;
+}
+
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #0d8796;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom {
+        background-color: transparent;
+        padding: 10px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .navbar-custom .navbar-nav > .active > a {
+        border-radius: 3px;
+    }
+
+    .navbar-right {
+        font-size: 1.5em;
+    }
+
+    .navbar-custom.affix .navbar-brand {
+        font-size: 1.5em;
+    }
+}
